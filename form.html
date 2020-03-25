@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>資管營報名網站</title>
+</head>
+<body>
+	<form action="submit.php" method="POST">
+		<p>歡迎來到資管營報名網站，請於下方填寫資料，完成報名。</p><br/>
+		姓名:<input type="text" name="username" required><br/>
+		就讀學校:<input type="text" name="school" required><br/>
+		<p>性別:</p>
+		男<input type="radio" name="gender" value="M" required>
+		女<input type="radio" name="gender" value="F" required><br/>
+		居住地:<select name="live" multiple required>
+			<option value="N">北部</option>
+			<option value="C">中部</option>
+			<option value="S">南部</option>
+			<option value="E">東部</option>
+			<option value="O">離島</option>
+		</select><br/>
+		郵件信箱:<input type="email" id="email" name="email" required><br/>
+		連絡電話:<input type="text" name="phone" required><br/>
+		<p>留言板:</p><br/>
+		<textarea name="comment"  cols="40" rows="20"></textarea>
+		<br/>
+		<input type="reset"><input type="submit" value="提交">
+	</form>
+</body>
+</html>
